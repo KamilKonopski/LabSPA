@@ -1,0 +1,97 @@
+.contact {
+    background-color: #6302d3;
+
+    & h2 {
+        color: #fff;
+        font-size: 3rem;
+        text-align: center;
+
+        & span {
+            color: #fe9e37;
+        }
+    }
+
+    & .contact-us {
+        & .contact-us-body {
+            background: transparent;
+            border: none;
+            color: #8c8c8b;
+            border-bottom: 2px solid #8c8c8b;
+            font-size: 1.8rem;
+            display: inline-block;
+            margin: 3rem 4rem;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        & .contact-us-button {
+            background-color: #000;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            padding: 2rem 6rem;
+            border: none;
+            margin: 2rem 7rem 4rem;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (orientation: landscape) {
+    .contact {
+        display: flex;
+
+        & h2 {
+            flex-grow: 2;
+            font-size: 5rem;
+        }
+
+        & .contact-us {
+            flex-grow: 1;
+        }
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    .contact {
+        & h2 {
+            font-size: 6rem;
+            text-align: left;
+            float: left;
+            padding-top: 20rem;
+        }
+
+        & .contact-us {
+            text-align: right;
+
+            & .contact-us-body {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@media (orientation: landscape) and (width: 1920px) {
+    .contact {
+        height: 50vh;
+        display: flex;
+
+        & h2 {
+            font-size: 8rem;
+            flex-grow: 1;
+            padding-top: 5rem;
+        }
+
+        & .contact-us {
+            flex-grow: 1;
+
+            & .contact-us-body {
+                font-size: 2rem;
+                display: block;
+            }
+        }
+    }
+}
